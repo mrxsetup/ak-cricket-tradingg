@@ -7,9 +7,9 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- ===== DYNAMIC META PIXEL (BAS ID CHANGE KARNA) ===== -->
+<!-- ===== DYNAMIC META PIXEL ===== -->
 <script>
-const PIXEL_ID = '123456789012345'; // 👈 yaha apni pixel ID daal dena
+const PIXEL_ID = '123456789012345'; // 👈 yaha apni pixel ID change karna
 
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
@@ -37,33 +37,25 @@ fbq('track','PageView');
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
 </noscript>
-<!-- ===== END PIXEL ===== -->
 
 <style>
 .neon-box{padding:12px 22px;border-radius:14px;border:2px solid #00faff;box-shadow:0 0 10px #00faff,0 0 25px #00faff}
 .neon-text{font-weight:900;font-size:1.8rem;color:#fff;text-shadow:0 0 6px #00faff,0 0 12px #00faff}
 .counter-text{font-size:1.4rem;font-weight:900;color:#00ff6a;text-shadow:0 0 10px #00ff6a}
 .sub-text{font-weight:800;color:#ffb300}
-.mirror-wrap{width:140px;height:140px;border-radius:50%;display:grid;place-items:center;
-background:#000;box-shadow:0 0 25px rgba(0,255,255,.6)}
+.mirror-wrap{width:140px;height:140px;border-radius:50%;display:grid;place-items:center;background:#000;box-shadow:0 0 25px rgba(0,255,255,.6)}
 .mirror-img{width:120px;height:120px;border-radius:50%;object-fit:cover}
-.neon-btn{background:#00faff;color:#ff003c;padding:14px 26px;border-radius:14px;
-font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
+.neon-btn{background:#00faff;color:#ff003c;padding:14px 26px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
 @keyframes pulse{50%{box-shadow:0 0 45px #00faff}}
-.video-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
-.ads-credit{font-size:10px;color:#00faff;letter-spacing:1px}
+.ads-credit{font-size:12px;color:#00faff;letter-spacing:1px;text-shadow:0 0 6px #00faff}
 </style>
 </head>
 
 <body class="bg-black text-white overflow-hidden">
 
-<div class="relative h-screen flex items-center justify-center">
-
-<!-- VIDEO BACKGROUND -->
-<video class="video-bg" autoplay muted loop playsinline>
-  <source src="https://res.cloudinary.com/dzhykus7z/video/upload/v1769638967/aklogovideo_mnkygw.mp4" type="video/mp4">
-</video>
+<div class="relative h-screen flex items-center justify-center bg-cover bg-center"
+style="background-image:url('https://github.com/mrxsetup/-AK-_CRICKET_TRADER/blob/main/CRICKETTRADER.jpg?raw=true');">
 
 <div class="overlay"></div>
 
@@ -103,7 +95,11 @@ font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8
     💸 ( A K ) CRICKET TRADER™ <br> Cricket Market Ka King 🏏👑
   </p>
 
-  <div class="mt-auto pt-4 pb-2 ads-credit">ADS_SETUP BY @MRXSETUP</div>
+  <!-- CLICKABLE CREDIT -->
+  <div class="mt-auto pt-4 pb-2">
+    <a href="https://t.me/captain4433" target="_blank" class="ads-credit">@captain4433</a>
+  </div>
+
 </div>
 </div>
 
